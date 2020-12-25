@@ -17,4 +17,8 @@ public class BirdService {
         List<Bird> birds = birdDao.getBirds();
         return birds;
     }
+
+    public List<Bird> getBirdByName(String name) {
+        return birdDao.getBirdByName(name);
+    }
 }
